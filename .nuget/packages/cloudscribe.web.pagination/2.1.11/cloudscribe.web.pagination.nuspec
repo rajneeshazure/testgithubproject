@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>cloudscribe.Web.Pagination</id>
+    <version>2.1.11</version>
+    <authors>Joe Audette</authors>
+    <owners>Joe Audette</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">Apache-2.0</license>
+    <licenseUrl>https://licenses.nuget.org/Apache-2.0</licenseUrl>
+    <projectUrl>https://github.com/joeaudette/cloudscribe.Web.Pagination</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/joeaudette/cloudscribe.Web.Pagination/master/cloudscribe-icon-32.png</iconUrl>
+    <description>an AspNetCore TagHelper for pagination</description>
+    <copyright>Source Tree Solutions</copyright>
+    <tags>cloudscribe mvc pagination navigation bootstrap</tags>
+    <repository type="git" url="https://github.com/cloudscribe/cloudscribe.Web.Pagination.git" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="cloudscribe.Pagination.Models" version="1.0.5" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc" version="2.1.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc.Core" version="2.1.3" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.AspNetCore.Mvc.TagHelpers" version="2.1.3" exclude="Build,Analyzers" />
+        <dependency id="System.Linq.Queryable" version="4.3.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

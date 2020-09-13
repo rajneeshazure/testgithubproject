@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Microsoft.Azure.DocumentDB.ChangeFeedProcessor</id>
+    <version>2.1.0</version>
+    <title>Microsoft Azure Cosmos DB Change Feed Processor library</title>
+    <authors>Microsoft</authors>
+    <owners>Microsoft</owners>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>http://go.microsoft.com/fwlink/?LinkID=509837</licenseUrl>
+    <projectUrl>https://github.com/azure/azure-documentdb-changefeedprocessor-dotnet</projectUrl>
+    <iconUrl>http://go.microsoft.com/fwlink/?LinkID=288890</iconUrl>
+    <description>This library provides a host for distributing change feed events in partitioned collection across multiple observers. Instances of the host can scale up (by adding) or down (by removing) dynamically, and the load will be automatically distributed among active instances in about-equal way.</description>
+    <releaseNotes>The change log for this project is available at https://docs.microsoft.com/azure/cosmos-db/sql-api-sdk-dotnet-changefeed.</releaseNotes>
+    <copyright>© Microsoft Corporation. All rights reserved.</copyright>
+    <tags>microsoft azure cosmosdb documentdb docdb nosql azureofficial</tags>
+    <repository url="https://github.com/Azure/azure-documentdb-changefeedprocessor-dotnet" />
+    <dependencies>
+      <group targetFramework=".NETFramework4.5">
+        <dependency id="Microsoft.CSharp" version="4.4.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="9.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Azure.DocumentDB" version="2.0.0" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard2.0">
+        <dependency id="Microsoft.CSharp" version="4.4.1" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="9.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Azure.DocumentDB.Core" version="2.0.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+</package>

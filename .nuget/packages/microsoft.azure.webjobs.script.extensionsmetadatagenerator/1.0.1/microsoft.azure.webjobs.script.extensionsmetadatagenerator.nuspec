@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Microsoft.Azure.WebJobs.Script.ExtensionsMetadataGenerator</id>
+        <version>1.0.1</version>
+        <authors>Microsoft</authors>
+        <owners>Microsoft</owners>
+        <licenseUrl>http://www.microsoft.com/web/webpi/eula/aspnetcomponent_rtw_enu.htm</licenseUrl>
+        <iconUrl>https://raw.githubusercontent.com/Azure/azure-webjobs-sdk/dev/webjobs.png</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Azure Functions extensions metadata generator</description>
+        <dependencies>
+            <group targetFramework=".NETFramework4.6">
+                <dependency id="Microsoft.Build.Framework" version="15.3.409" exclude="Build,Analyzers" />
+                <dependency id="Microsoft.Build.Utilities.Core" version="15.3.409" exclude="Build,Analyzers" />
+            </group>
+            <group targetFramework=".NETStandard2.0">
+                <dependency id="Microsoft.Build.Framework" version="15.3.409" exclude="Build,Analyzers" />
+                <dependency id="Microsoft.Build.Utilities.Core" version="15.3.409" exclude="Build,Analyzers" />
+                <dependency id="System.Runtime.Loader" version="4.3.0" exclude="Build,Analyzers" />
+            </group>
+        </dependencies>
+    </metadata>
+</package>

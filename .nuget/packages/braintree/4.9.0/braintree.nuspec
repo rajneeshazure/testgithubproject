@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+  <metadata>
+    <id>Braintree</id>
+    <version>4.9.0</version>
+    <authors>Braintree</authors>
+    <owners>Braintree</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>https://github.com/braintree/braintree_dotnet</projectUrl>
+    <description>Braintree Client Library</description>
+    <releaseNotes>* Add Error indicating pdf uploads too long for dispute evidence.
+      * Add `bin` field to `PaymentMethodNonceDetails`
+      * Fix creating transaction from local payment webhook data
+      * Add `GrantedPaymentMethodRevoked` webhook response objects
+      * Add `Username` and `VenmoUserId` to `PaymentMethodNonceDetails`.</releaseNotes>
+    <copyright>Copyright © Braintree, a division of PayPal, Inc. 2018</copyright>
+    <tags>braintree paypal venmo intenational payments gateway currencies money visa mastercard bitcoin maestro apple pay android pay amex jcb diners club discover american express</tags>
+    <dependencies>
+      <group targetFramework=".NETFramework4.5.2">
+        <dependency id="Newtonsoft.Json" version="9.0.1" exclude="Build,Analyzers" />
+      </group>
+      <group targetFramework=".NETStandard1.3">
+        <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="1.0.2" exclude="Build,Analyzers" />
+        <dependency id="NETStandard.Library" version="1.6.0" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="9.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.Xml.XPath.XmlDocument" version="4.0.1" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkAssemblies>
+      <frameworkAssembly assemblyName="Microsoft.CSharp" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System.Net" targetFramework=".NETFramework4.5.2" />
+      <frameworkAssembly assemblyName="System.Xml" targetFramework=".NETFramework4.5.2" />
+    </frameworkAssemblies>
+  </metadata>
+</package>
